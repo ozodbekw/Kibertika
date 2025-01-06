@@ -554,6 +554,42 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../inter-v18-latin-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: swap;
+
+  src: url(../inter-v18-latin-600.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: swap;
+
+  src: url(../inter-v18-latin-700.woff2) format("woff2");
+}
+
 .container {
   width: 100%;
 }
@@ -588,6 +624,55 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .list-item {
   display: list-item;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-hero {
+  background-image: url('/images/png/hero.png');
+}
+
+.bg-hero-pattern {
+  background-image: url('/images/png/hero-bg-color.png');
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1420px;
 }
